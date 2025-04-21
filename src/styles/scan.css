@@ -1,0 +1,85 @@
+.scan-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    background: black;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .scan-container h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FCFAFA;
+    margin-bottom: 1.5rem;
+  }
+  
+  .scan-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ADB6C4;
+  }
+  
+  .form-input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ADB6C4;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #4B644A;
+    box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.1);
+  }
+  
+  .form-error {
+    color: #FF6B6B;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  
+  .progress-bar {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    height: 4px;
+    background: #ADB6C4;
+    border-radius: 2px;
+  }
+  
+  .progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #1E90FF;
+    animation: progress 2s infinite linear;
+  }
+  
+  @keyframes progress {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(200%); }
+  }
+  
+  @media (max-width: 768px) {
+    .scan-container {
+      padding: 1rem;
+    }
+  
+    .scan-container h1 {
+      font-size: 1.8rem;
+    }
+  }

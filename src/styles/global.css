@@ -1,0 +1,122 @@
+/* Global styles with aesthetic enhancements */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #FCFAFA;
+  background: url('/final.gif') no-repeat center center fixed;
+  background-color: black;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+main {
+  flex: 1; /* Main content grows to fill available space */
+  padding: 2rem;
+  padding-bottom: 60px;
+}
+
+/* Navbar */
+.navbar {
+  background: black;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: linear-gradient(45deg, #39FF14, #4B644A);
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links li a {
+  color: #FCFAFA;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a.active,
+.navbar-links li a:hover {
+  color: #39FF14;
+}
+
+/* Footer */
+.footer {
+    background: black;
+    color: #ADB6C4;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+/* Button */
+.btn {
+  background: #FCFAFA;
+  color: black;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 100px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: transform 0.2s ease, background 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: #ADB6C4;
+  transform: translateY(-2px);
+}
+
+.btn-disabled {
+  background: #FCFAFA;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
