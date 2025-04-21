@@ -7,7 +7,6 @@ A React-based web application that simulates a vulnerability scanner, allowing u
 - View detailed scan results with severity levels
 - Responsive design for mobile and desktop
 - Scan history stored in local storage
-- Downloadable scan reports
 
 ## Tech Stack
 - React.js (Functional Components, Hooks)
