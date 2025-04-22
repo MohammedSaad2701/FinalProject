@@ -15,7 +15,7 @@ function Results() {
       <ul className="vulnerability-list">
         {results.vulnerabilities.map((vuln, index) => (
           <li key={index} className="vulnerability-item">
-            <strong>{vuln.type}</strong> - Severity: {vuln.severity}
+            <strong>{vuln.type} - Severity: {vuln.severity}</strong>
             <p>{vuln.description}</p>
           </li>
         ))}
