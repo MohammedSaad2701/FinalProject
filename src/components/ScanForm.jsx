@@ -2,12 +2,10 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-// Reusable form for URL input with validation
 function ScanForm({ onSubmit }) {
   const [url, setUrl] = useState('');
   const [error, setError] = useState('');
 
-  // Validate URL format
   const validateUrl = (input) => {
     const urlPattern = /^(https?:\/\/)?([\w-]+?\.)+[\w-]+(\/[\w-./?%&=]*)?$/;
     return urlPattern.test(input);

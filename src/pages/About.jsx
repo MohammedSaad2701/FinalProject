@@ -1,6 +1,5 @@
 import '../styles/about.css';
 
-// About page with tool information
 function About() {
   return (
     <div className="about-container">

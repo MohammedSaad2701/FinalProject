@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 
-// Reusable Button component
 function Button({ children, onClick, disabled }) {
   return (
     <button

@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 
-// Responsive navigation bar
 function Navbar() {
   return (
     <nav className="navbar">

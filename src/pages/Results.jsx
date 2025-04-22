@@ -2,7 +2,6 @@ import { useContext } from 'react';
 import { ScanContext } from '../context/ScanContext';
 import '../styles/results.css';
 
-// Results page with scan details and history
 function Results() {
   const { results, history } = useContext(ScanContext);
 

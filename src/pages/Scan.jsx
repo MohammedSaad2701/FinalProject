@@ -5,7 +5,6 @@ import ScanForm from '../components/ScanForm';
 import { API_URL } from '../constants';
 import '../styles/scan.css';
 
-// Scan page with form and API call
 function Scan() {
   const { setScanData, setResults, setHistory } = useContext(ScanContext);
   const navigate = useNavigate();
@@ -16,11 +15,9 @@ function Scan() {
     setScanData({ url });
 
     try {
-      // Replace with your custom API URL in constants.js or .env
       const response = await fetch(API_URL);
       const data = await response.json();
 
-      // Mock vulnerability data
       const scanResults = {
         url,
         vulnerabilities: [
